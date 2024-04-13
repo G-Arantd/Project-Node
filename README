@@ -1,0 +1,11 @@
+# Para Iniciar projeto
+
+    npm init -y
+   
+    npm i typescript -D
+   
+    npm i @types/node -D
+   
+    npm i tsx -D
+   
+    npx tsc --init
