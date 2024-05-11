@@ -1,13 +1,13 @@
 import { IesUpdateDto } from "../../data/entity/Ies";
 import { IesRepository } from "../../data/repository/IesRepository";
-import { Ies } from "@prisma/client";
+import { ies } from "@prisma/client";
 import { UUID } from "crypto";
 
 export class UpdateIesUseCase{
 
     constructor(private iesRepository: IesRepository){}
 
-    async execute(idIes : UUID, ies: IesUpdateDto): Promise<Ies>{
+    async execute(idIes : string, ies: IesUpdateDto): Promise<ies>{
 
         try {
             const iesUpdate = await this.iesRepository.updateIes(idIes, ies);

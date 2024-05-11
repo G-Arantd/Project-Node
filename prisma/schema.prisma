@@ -13,7 +13,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Ies {
+model ies {
   idIes          String   @id @default(uuid())
   nameIes        String
   cnpjIes        String   @unique

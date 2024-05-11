@@ -1,5 +1,5 @@
 export interface Ies {
-    idIes: number;
+    idIes: string;
     nameIes: string;
     cnpjIes: string;
     creationDateIes: Date;
